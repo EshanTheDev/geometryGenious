@@ -8,6 +8,14 @@ function calculateTriangleArea(){
       const heightValue = document.getElementById('triangle-height').value ;
       const height =parseFloat(heightValue);
     //   console.log(height);
+
+if(isNaN(base)|| isNaN(height)){
+  alert ('Please provide a number')
+
+  return ;
+}
+
+
       const area = 0.5 * base * height ;
     //   console.log(area)
 
@@ -35,6 +43,12 @@ const length = parseFloat(lengthValue);
 // console.log(typeof(length))
 
 
+if(isNaN(width)|| isNaN(length)){
+  alert ('Please provide a number')
+
+  return ;
+}
+
 const area = width * length ;
 
 // show rectangle area
@@ -55,6 +69,13 @@ function parallelogramArea(){
   const heigthValue = document.getElementById('Parallelogram-height').value ;
   const heigth = parseFloat(heigthValue) ;
 
+  if(isNaN(base)|| isNaN(heigth)){
+    alert ('Please provide a number')
+  
+    return ;
+  }
+
+
 const area = base * heigth ;
 const parallelogramSpan = document.getElementById('Parallelogram-area');
 
@@ -69,6 +90,14 @@ function RhombusArea(){
 
   const RhombusFirstVAlue = getInputValue('Rhombus-first');
 const RhombusSecondValue = getInputValue('Rhombus-second');
+
+if(isNaN(RhombusFirstVAlue)|| isNaN(RhombusSecondValue)){
+  alert ('Please provide a number')
+
+  return ;
+}
+
+
 const area = 0.5 * RhombusFirstVAlue * RhombusSecondValue ;
 // console.log(area)
 // area 
@@ -97,6 +126,9 @@ function setElementInnertext(id,area){
 function pentagonArea(){
 const pentagonFirstValue = getInputValue('pentagon-first');
 const pentagonSecondValue = getInputValue('pentagon-second');
+
+
+
 
 const area = 0.5 * pentagonFirstValue * pentagonSecondValue ;
 
